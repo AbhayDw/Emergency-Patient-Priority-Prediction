@@ -19,6 +19,13 @@ An AI-powered Machine Learning application that predicts whether a patient requi
 </p>
 
 ---
+## 🌐 Live Demo
+
+🚀 **Try the application here:**
+
+**🔗 https://emergency-patient-priority-prediction-3zrx8fwguad42rcgzy7jaa.streamlit.app/**
+
+> Experience real-time emergency patient priority prediction using the deployed Streamlit application.
 
 # 📑 Table of Contents
 
