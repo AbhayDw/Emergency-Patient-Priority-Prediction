@@ -148,7 +148,7 @@ streamlit run app.py
 **Abhay Dwivedi**
 
 - GitHub: https://github.com/AbhayDw
-- LinkedIn: https://www.linkedin.com/in/abhay-dwivedi-62a1ab272/
+- LinkedIn: https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/
 
 ---
 
