@@ -1,98 +1,252 @@
 # 🚑 AI Emergency Patient Priority Prediction System
 
-An AI-powered machine learning application that predicts whether a patient requires **High Priority** or **Low Priority** emergency care based on vital signs and symptoms. This system helps support faster triage decisions in emergency departments.
+<p align="center">
+  <img src="assets/01_home_page.png" alt="Project Banner" width="900">
+</p>
+
+<p align="center">
+An AI-powered Machine Learning application that predicts whether a patient requires <b>High Priority</b> or <b>Low Priority</b> emergency care based on vital signs and symptoms.
+</p>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</p>
 
 ---
 
-## 📌 Project Overview
+# 📑 Table of Contents
 
-Emergency rooms often receive multiple patients simultaneously. This project uses a **Logistic Regression** model to classify patients into emergency priority levels using their medical information.
-
-The application provides instant predictions through an interactive Streamlit web interface.
-
----
-
-## ✨ Features
-
-- Predicts patient emergency priority
-- User-friendly Streamlit web application
-- Machine Learning powered predictions
-- Data preprocessing with Label Encoding and Standard Scaling
-- Fast and accurate classification
-- Easy to use interface
-
----
-
-## 🛠️ Tech Stack
-
-- Python
-- Scikit-learn
-- Pandas
-- NumPy
-- Streamlit
-- Joblib
+- Project Overview
+- Features
+- Tech Stack
+- Dataset
+- Machine Learning Workflow
+- Project Structure
+- Application Screenshots
+- Exploratory Data Analysis
+- Model Performance
+- Installation
+- Usage
+- Future Improvements
+- Author
 
 ---
 
-## 📂 Project Structure
+# 📌 Project Overview
+
+Emergency rooms receive multiple patients simultaneously, making quick and accurate triage essential.
+
+This project uses **Logistic Regression** to classify patients into:
+
+- 🔴 High Priority
+- 🟢 Low Priority
+
+based on medical information such as:
+
+- Heart Rate
+- Blood Pressure
+- Oxygen Saturation
+- Respiratory Rate
+- Chest Pain
+- Difficulty Breathing
+- Pain Severity
+- Previous Medical History
+- Arrival Mode
+- Age
+- Body Temperature
+
+---
+
+# ✨ Features
+
+- Machine Learning Prediction
+- Interactive Streamlit Web App
+- Clean User Interface
+- Instant Prediction
+- Logistic Regression Model
+- Feature Scaling
+- Label Encoding
+- High Accuracy
+- Easy Deployment
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Language | Python |
+| ML | Scikit-Learn |
+| Data | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Deployment | Streamlit |
+| Model Saving | Joblib |
+
+---
+
+# 📊 Dataset
+
+The dataset contains patient medical records including:
+
+- Age
+- Heart Rate
+- Blood Pressure
+- Oxygen Saturation
+- Body Temperature
+- Respiratory Rate
+- Chest Pain
+- Difficulty Breathing
+- Consciousness Level
+- Pain Severity
+- Previous Medical History
+- Arrival Mode
+
+Target Variable
+
+```
+Emergency Priority
+```
+
+- 0 → Low Priority
+- 1 → High Priority
+
+---
+
+# 🤖 Machine Learning Workflow
+
+```
+Dataset
+     │
+     ▼
+Data Cleaning
+     │
+     ▼
+EDA
+     │
+     ▼
+Feature Engineering
+     │
+     ▼
+Label Encoding
+     │
+     ▼
+Feature Scaling
+     │
+     ▼
+Train Test Split
+     │
+     ▼
+Logistic Regression
+     │
+     ▼
+Model Evaluation
+     │
+     ▼
+Streamlit Deployment
+```
+
+---
+
+# 📂 Project Structure
 
 ```
 Emergency-Patient-Priority-Prediction/
+
+│
+├── assets/
+│   ├── 01_home_page.png
+│   ├── 02_input_form.png
+│   ├── 03_prediction_high.png
+│   ├── 04_prediction_low.png
+│   ├── 05_dataset.png
+│   ├── 06_heatmap.png
+│   ├── 07_class_distribution.png
+│   ├── 08_model_metrics.png
+│   └── 09_confusion_matrix.png
 │
 ├── app.py
 ├── improved_emergency_triage_dataset.csv
 ├── logistic_regression_model.pkl
 ├── scaler.pkl
-├── label_encoder.pkl
 ├── feature_columns.pkl
+├── label_encoder.pkl
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## 📊 Machine Learning Workflow
+# 🖥️ Application Screenshots
 
-1. Data Collection
-2. Data Cleaning
-3. Exploratory Data Analysis (EDA)
-4. Feature Engineering
-5. Label Encoding
-6. Feature Scaling
-7. Model Training
-8. Model Evaluation
-9. Model Saving
-10. Streamlit Deployment
+## 🏠 Home Page
+
+![](assets/01_home_page.png)
 
 ---
 
-## 📥 Input Features
+## 📝 Patient Information Form
 
-- Age
-- Heart Rate
-- Blood Pressure
-- Oxygen Saturation (SpO₂)
-- Body Temperature
-- Respiratory Rate
-- Chest Pain
-- Difficulty Breathing
-- Level of Consciousness
-- Pain Severity
-- Previous Medical History
-- Arrival Mode
+![](assets/02_input_form.png)
 
 ---
 
-## 🎯 Output
+## 🔴 High Priority Prediction
 
-The model predicts one of the following:
-
-- 🟢 Low Priority
-- 🔴 High Priority
+![](assets/03_prediction_high.png)
 
 ---
 
-## 🚀 Installation
+## 🟢 Low Priority Prediction
+
+![](assets/04_prediction_low.png)
+
+---
+
+# 📊 Exploratory Data Analysis
+
+## Dataset Overview
+
+![](assets/05_dataset.png)
+
+---
+
+## Correlation Heatmap
+
+![](assets/06_heatmap.png)
+
+---
+
+## Class Distribution
+
+![](assets/07_class_distribution.png)
+
+---
+
+# 📈 Model Performance
+
+## Evaluation Metrics
+
+| Metric | Score |
+|---------|-------|
+| Accuracy | XX% |
+| Precision | XX |
+| Recall | XX |
+| F1 Score | XX |
+
+---
+
+## Confusion Matrix
+
+![](assets/09_confusion_matrix.png)
+
+---
+
+# 🚀 Installation
 
 Clone the repository
 
@@ -120,36 +274,43 @@ streamlit run app.py
 
 ---
 
-## 📈 Model Used
+# 💻 Usage
 
-- Logistic Regression
-
----
-
-## 📷 Application Preview
-
-> Add screenshots of your Streamlit application here.
+1. Enter the patient's medical information.
+2. Click **Predict**.
+3. View the predicted emergency priority.
 
 ---
 
-## 🔮 Future Improvements
+# 🔮 Future Improvements
 
-- Multi-class emergency severity prediction
-- Integration with hospital databases
-- Deep Learning models
+- Deep Learning Models
 - Explainable AI (SHAP/LIME)
-- Cloud deployment
-- Real-time patient monitoring
+- Hospital Database Integration
+- Real-Time Patient Monitoring
+- Multi-Class Priority Prediction
+- Cloud Deployment
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Abhay Dwivedi**
+## Abhay Dwivedi
+
+**B.Tech CSE (Cyber Security)**
+
+### Connect with me
 
 - GitHub: https://github.com/AbhayDw
-- LinkedIn: https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/
+- LinkedIn:  https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/
 
 ---
 
-## ⭐ If you found this project useful, please consider giving it a Star!
+# ⭐ Support
+
+If you found this project useful,
+
+⭐ **Please give this repository a Star.**
+
+It motivates me to build more Machine Learning projects.
+
