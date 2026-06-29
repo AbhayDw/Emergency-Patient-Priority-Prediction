@@ -217,12 +217,6 @@ Emergency-Patient-Priority-Prediction/
 
 ---
 
-## 📂 Batch CSV Upload — Input
-
-![Batch CSV Input](assets/BatchCSV_Input.png)
-
----
-
 ## 📂 Batch CSV Upload — Output
 
 ![Batch CSV Output](assets/Batch_csv_Output.png)
