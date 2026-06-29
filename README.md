@@ -1,7 +1,7 @@
 # 🚑 AI Emergency Patient Priority Prediction System
 
 <p align="center">
-  <img src="assets/01_home_page.png" alt="Project Banner" width="900">
+  <img src="assets/HomePage.png" alt="Project Banner" width="900">
 </p>
 
 <p align="center">
@@ -13,6 +13,7 @@ An AI-powered Machine Learning application that predicts whether a patient requi
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red)
+![Accuracy](https://img.shields.io/badge/Accuracy-97.20%25-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 </p>
@@ -21,19 +22,19 @@ An AI-powered Machine Learning application that predicts whether a patient requi
 
 # 📑 Table of Contents
 
-- Project Overview
-- Features
-- Tech Stack
-- Dataset
-- Machine Learning Workflow
-- Project Structure
-- Application Screenshots
-- Exploratory Data Analysis
-- Model Performance
-- Installation
-- Usage
-- Future Improvements
-- Author
+- [Project Overview](#-project-overview)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Dataset](#-dataset)
+- [Machine Learning Workflow](#-machine-learning-workflow)
+- [Project Structure](#-project-structure)
+- [Application Screenshots](#-application-screenshots)
+- [Exploratory Data Analysis](#-exploratory-data-analysis)
+- [Model Performance](#-model-performance)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
 
 ---
 
@@ -43,8 +44,8 @@ Emergency rooms receive multiple patients simultaneously, making quick and accur
 
 This project uses **Logistic Regression** to classify patients into:
 
-- 🔴 High Priority
-- 🟢 Low Priority
+- 🔴 **High Priority** — Requires immediate medical attention
+- 🟢 **Low Priority** — Can be managed with standard care
 
 based on medical information such as:
 
@@ -60,19 +61,23 @@ based on medical information such as:
 - Age
 - Body Temperature
 
+The model achieves **97.20% accuracy** on the test set, making it a highly reliable tool for supporting emergency triage decisions.
+
 ---
 
 # ✨ Features
 
-- Machine Learning Prediction
-- Interactive Streamlit Web App
-- Clean User Interface
-- Instant Prediction
-- Logistic Regression Model
-- Feature Scaling
-- Label Encoding
-- High Accuracy
-- Easy Deployment
+- ✅ Machine Learning Prediction (Logistic Regression)
+- ✅ Interactive Streamlit Web App
+- ✅ Individual Patient Prediction Form
+- ✅ **Batch CSV Prediction** — Upload multiple patients at once
+- ✅ Sample Data Auto-Fill for quick testing
+- ✅ Clean & Professional User Interface
+- ✅ Instant Prediction with Confidence Score
+- ✅ Feature Scaling & Label Encoding
+- ✅ Data Visualizations & EDA Dashboard
+- ✅ 97.20% Test Accuracy
+- ✅ Easy Local Deployment
 
 ---
 
@@ -80,7 +85,7 @@ based on medical information such as:
 
 | Category | Technology |
 |----------|------------|
-| Language | Python |
+| Language | Python 3.11 |
 | ML | Scikit-Learn |
 | Data | Pandas, NumPy |
 | Visualization | Matplotlib, Seaborn |
@@ -106,14 +111,14 @@ The dataset contains patient medical records including:
 - Previous Medical History
 - Arrival Mode
 
-Target Variable
+**Target Variable**
 
 ```
 Emergency Priority
 ```
 
-- 0 → Low Priority
-- 1 → High Priority
+- `0` → Low Priority
+- `1` → High Priority
 
 ---
 
@@ -156,18 +161,17 @@ Streamlit Deployment
 
 ```
 Emergency-Patient-Priority-Prediction/
-
 │
 ├── assets/
-│   ├── 01_home_page.png
-│   ├── 02_input_form.png
-│   ├── 03_prediction_high.png
-│   ├── 04_prediction_low.png
-│   ├── 05_dataset.png
-│   ├── 06_heatmap.png
-│   ├── 07_class_distribution.png
-│   ├── 08_model_metrics.png
-│   └── 09_confusion_matrix.png
+│   ├── HomePage.png
+│   ├── EmergencyInput.png
+│   ├── Emergency_Predication.png
+│   ├── NonEmergencyInput.png
+│   ├── NonEmergency_Predication.png
+│   ├── BatchCSV_Input.png
+│   ├── Batch_csv_Output.png
+│   ├── SampleData.png
+│   └── Visualization.png
 │
 ├── app.py
 ├── improved_emergency_triage_dataset.csv
@@ -185,45 +189,55 @@ Emergency-Patient-Priority-Prediction/
 
 ## 🏠 Home Page
 
-![](assets/01_home_page.png)
+![Home Page](assets/HomePage.png)
 
 ---
 
-## 📝 Patient Information Form
+## 🔴 High Priority — Patient Input
 
-![](assets/02_input_form.png)
-
----
-
-## 🔴 High Priority Prediction
-
-![](assets/03_prediction_high.png)
+![Emergency Input Form](assets/EmergencyInput.png)
 
 ---
 
-## 🟢 Low Priority Prediction
+## 🔴 High Priority — Prediction Result
 
-![](assets/04_prediction_low.png)
-
----
-
-# 📊 Exploratory Data Analysis
-
-## Dataset Overview
-
-![](assets/05_dataset.png)
+![Emergency Prediction Result](assets/Emergency_Predication.png)
 
 ---
 
-## Correlation Heatmap
+## 🟢 Low Priority — Patient Input
 
-![](assets/06_heatmap.png)
+![Non-Emergency Input Form](assets/NonEmergencyInput.png)
 
 ---
 
-## Class Distribution
+## 🟢 Low Priority — Prediction Result
 
-![](assets/07_class_distribution.png)
+![Non-Emergency Prediction Result](assets/NonEmergency_Predication.png)
+
+---
+
+## 📂 Batch CSV Upload — Input
+
+![Batch CSV Input](assets/BatchCSV_Input.png)
+
+---
+
+## 📂 Batch CSV Upload — Output
+
+![Batch CSV Output](assets/Batch_csv_Output.png)
+
+---
+
+## 🧪 Sample Data Auto-Fill
+
+![Sample Data](assets/SampleData.png)
+
+---
+
+## 📊 Data Visualizations
+
+![Visualization Dashboard](assets/Visualization.png)
 
 ---
 
@@ -232,41 +246,62 @@ Emergency-Patient-Priority-Prediction/
 ## Evaluation Metrics
 
 | Metric | Score |
-|---------|-------|
-| Accuracy | XX% |
-| Precision | XX |
-| Recall | XX |
-| F1 Score | XX |
+|--------|-------|
+| **Training Accuracy** | 97.58% |
+| **Testing Accuracy** | 97.20% |
+| **Precision** | 97.83% |
+| **Recall** | 97.50% |
+| **F1 Score** | 97.66% |
 
 ---
 
 ## Confusion Matrix
 
-![](assets/09_confusion_matrix.png)
+|  | Predicted: Low Priority (0) | Predicted: High Priority (1) |
+|--|--|--|
+| **Actual: Low Priority (0)** | TN = 387 | FP = 13 |
+| **Actual: High Priority (1)** | FN = 15 | TP = 585 |
+
+- **True Negatives (TN):** 387 — Correctly predicted Low Priority
+- **False Positives (FP):** 13 — Low Priority incorrectly flagged as High
+- **False Negatives (FN):** 15 — High Priority incorrectly flagged as Low
+- **True Positives (TP):** 585 — Correctly predicted High Priority
+
+> ⚠️ In a medical triage context, minimizing **False Negatives** is critical — the model keeps FN at just **15**, meaning very few high-priority patients are missed.
+
+---
+
+## Classification Report
+
+| Class | Precision | Recall | F1 Score | Support |
+|-------|-----------|--------|----------|---------|
+| **0 — Low Priority** | 0.96 | 0.97 | 0.97 | 400 |
+| **1 — High Priority** | 0.98 | 0.97 | 0.98 | 600 |
+| **Overall Accuracy** | — | — | **0.97** | 1000 |
 
 ---
 
 # 🚀 Installation
 
-Clone the repository
+**Clone the repository**
 
 ```bash
 git clone https://github.com/AbhayDw/Emergency-Patient-Priority-Prediction.git
 ```
 
-Move into the project
+**Move into the project**
 
 ```bash
 cd Emergency-Patient-Priority-Prediction
 ```
 
-Install dependencies
+**Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application
+**Run the application**
 
 ```bash
 streamlit run app.py
@@ -276,20 +311,30 @@ streamlit run app.py
 
 # 💻 Usage
 
-1. Enter the patient's medical information.
+### Individual Prediction
+1. Enter the patient's medical information in the input form.
 2. Click **Predict**.
-3. View the predicted emergency priority.
+3. View the predicted emergency priority with confidence score.
+
+### Batch Prediction
+1. Prepare a CSV file with patient records.
+2. Upload via the **Batch CSV Upload** section.
+3. Download the results with predictions for all patients.
+
+### Quick Testing
+- Use the **Sample Data** button to auto-fill example patient values and test the model instantly.
 
 ---
 
 # 🔮 Future Improvements
 
-- Deep Learning Models
-- Explainable AI (SHAP/LIME)
-- Hospital Database Integration
-- Real-Time Patient Monitoring
-- Multi-Class Priority Prediction
-- Cloud Deployment
+- 🧠 Deep Learning Models (Neural Networks)
+- 🔍 Explainable AI (SHAP / LIME)
+- 🏥 Hospital Database Integration
+- 📡 Real-Time Patient Monitoring
+- 🎯 Multi-Class Priority Prediction (Critical / Urgent / Standard)
+- ☁️ Cloud Deployment (AWS / GCP / Azure)
+- 📱 Mobile-Friendly Interface
 
 ---
 
@@ -297,12 +342,12 @@ streamlit run app.py
 
 ## Abhay Dwivedi
 
-**B.Tech CSE (Cyber Security)**
+**B.Tech CSE (Cyber Security) | Data Science & ML Enthusiast**
 
 ### Connect with me
 
-- GitHub: https://github.com/AbhayDw
-- LinkedIn:  https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/
+- 🐙 GitHub: [github.com/AbhayDw](https://github.com/AbhayDw)
+- 💼 LinkedIn: [linkedin.com/in/abhay-dwivedi-6a8aa4279](https://www.linkedin.com/in/abhay-dwivedi-6a8aa4279/)
 
 ---
 
